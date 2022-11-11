@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Поля не могут быть пустыми", Toast.LENGTH_SHORT).show();
             return 0.0;
         }
+
         return Double.parseDouble(editTextA.getText().toString());
     }
 
@@ -45,10 +46,17 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //        return x;
 //    }
+
+    private void zero(EditText editText){
+        if (Double.parseDouble(editText.getText().toString()) ==0){
+            Toast.makeText(this, "Невозможно деление на ноль. Введите корректное значение", Toast.LENGTH_SHORT).show();
+        }
+    }
     public void click (View view){
         double a = get(editTextA);
         double b = get(editTextB);
         double c = get(editTextC);
+        zero(editTextA);
         String x = "";
         double d = (double)(b*b - 4*a*c);
         if (d<0) x += "Нет действительных корней";

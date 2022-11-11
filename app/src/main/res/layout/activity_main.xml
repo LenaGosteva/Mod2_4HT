@@ -30,7 +30,7 @@
         android:layout_height="60dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp"
-        android:hint="@string/s"
+        android:hint="Введи a:"
         android:inputType="numberDecimal|numberSigned"
         android:textSize="20sp"
         android:autofillHints="" />
