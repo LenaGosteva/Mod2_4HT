@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             else if (d > 0) {
                 double x1 = (double) ((-b + Math.sqrt(d)) / (2 * a));
                 double x2 = (double) ((-b - Math.sqrt(d)) / (2 * a));
-                x +=  x1 + ", " + x2;
+                x +=  String.format("%.2f", x1) + ", " + String.format("%.2f", x2);
             }
             textViewX.setText("ОТВЕТ: "+x);
             Toast.makeText(this, a + "x^2 + " + b + "x + " + c + " = 0", Toast.LENGTH_LONG).show();
