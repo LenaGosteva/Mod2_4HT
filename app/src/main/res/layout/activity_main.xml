@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
-        android:text="Введите коэффициент при х"
+        android:text="Введите коэффициент при х^2"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:text="Введите свободный член"
+        android:text="Введите коэффициент при х"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:text="Введите число в правой части уравнения"
+        android:text="Введите свободный член уравнения"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
